@@ -1,12 +1,6 @@
 
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 ### Installation
 
 1. Get a contract address at [https://cemscan.com/](https://cemscan.com/address/0x790e36496c3bb299BA849253b6e930F546451699/transactions)
