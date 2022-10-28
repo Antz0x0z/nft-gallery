@@ -12,9 +12,13 @@
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your NFT (ERC1155) contract address in `config.js`
    ```js
    const CONTRACT_ADDRESS = 'ENTER YOUR CONTRACT ADDRESS';
+   ```
+5. Run your application in project root directory
+   ```js
+   node .\public\app.js;
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
