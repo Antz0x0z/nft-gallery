@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <title>CEM Demo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico">
+</head>
+<!-- <body class="h-full bg-gray-700"> -->
+<body>
+  <div style="background-image: url('background.jpg');">
+    <nav class="one">
+      <ul>
+      <li><a href="#"><em class="fa fa-home fa-fw"></em>Home</a></li>
+      <li><a href="https://cemwallet.com" target="_blank">CEM Wallet</a></li>
+      <li><a href="https://cemnft.com" target="_blank">CEM NFT</a></li>
+      <li><a href="https://cemswap.com" target="_blank">CEM Swap</a></li>
+      <li><a href="https://cemblockchain.com" target="_blank">CEM Blockchain</a></li>
+      <li><a href="https://www.bitmart.com/trade/en?symbol=CEM_USDT&layout=basic" target="_blank">BitMart</a></li>
+      </ul>
+    </nav>
+</body>
+
+
+  <main class="p-10 flex justify-center min-h-full">
+    <div class="w-4/5">
+      <div class="mb-15">
+        <input type="text" id="wallet_address" autofocus autocomplete="on" value="0x790e36496c3bb299BA849253b6e930F546451699" placeholder="Wallet address" class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl text-blue-800 font-semibold outline-none">
+
+        <button id="load_button" class="border-2 border-blue-500 bg-blue-700 text-white transition-colors px-4 outline-none py-1 lowercase rounded-md text-xl font-semibold">
+          Load NFT's
+        </button>
+      </div>
+
+      <div id="nfts" class="flex gap-7 flex-wrap"></div>
+    </div>
+  </main>
+
+  <template id="nft_template">
+    <section>
+      <h1 class="font-bold bg-yellow-500 text-white text-center rounded-t-md"></h1>
+
+      <a href="" target="_blank">
+        <img class="rounded-b-md w-40 h-45" src="" alt="">
+      </a>
+    </section>
+  </template>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
