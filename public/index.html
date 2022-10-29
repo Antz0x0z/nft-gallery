@@ -22,28 +22,39 @@
     </nav>
 </body>
 
-
-  <main class="p-10 flex justify-center min-h-full">
-    <div class="w-4/5">
+  <main class="flex justify-center min-h-full">
+ 
+    <div class="w-100">
       <div class="mb-15">
-        <input type="text" id="wallet_address" autofocus autocomplete="on" value="0x790e36496c3bb299BA849253b6e930F546451699" placeholder="Wallet address" class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl text-blue-800 font-semibold outline-none">
-
+        <!-- 
+          <input type="text" id="wallet_address" autofocus autocomplete="off" 
+          value="0x790e36496c3bb299BA849253b6e930F546451699" placeholder="Wallet address" 
+          class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl 
+          text-blue-800 font-semibold outline-none">
+        -->
+         <select id="wallet_address" required="required" class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl text-blue-800 font-semibold outline-none">
+          <option value="">Выберите значение</option>
+          <option value="0xb826256e6a6ffdd79aa6a7707a0a916f8ce41950">Gandalf. The vision</option>
+          <option value="0x992A2B4C10f5d607c68e686Cd46aA7cdD018fa8E">Nature and creativity</option>
+          <option value="0x790e36496c3bb299BA849253b6e930F546451699">Demo BAYC tokens</option>
+        </select>
         <button id="load_button" class="border-2 border-blue-500 bg-blue-700 text-white transition-colors px-4 outline-none py-1 lowercase rounded-md text-xl font-semibold">
           Load NFT's
         </button>
       </div>
 
-      <div id="nfts" class="flex gap-7 flex-wrap"></div>
+      <div id="nfts" class="pad-10 flex gap-7 flex-wrap"></div>
     </div>
+ 
   </main>
 
   <template id="nft_template">
     <section>
-      <h1 class="font-bold bg-yellow-500 text-white text-center rounded-t-md"></h1>
-
-      <a href="" target="_blank">
-        <img class="rounded-b-md w-40 h-45" src="" alt="">
-      </a>
+        <h1 class="font-bold bg-yellow-500 text-white text-center rounded-t-md"></h1>
+        <h2 class="font-bold bg-gray-700 text-white text-center rounded-t-md"></h2>
+        <a href="" target="_blank">
+          <img class="rounded-b-md figure .figure:first-child w-40 h-45" src="" alt="">
+        </a>
     </section>
   </template>
 

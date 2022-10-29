@@ -503,6 +503,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.figure {
+  width: 27%; /* Ширина */
+  float: left; /* Выстраиваем элементы по горизонтали */
+  margin: 0 0 0 3.5%; /* Отступ слева */
+  background: #f0f0f0; /* Цвет фона */
+  border-radius: 5px; /* Радиус скругления */
+  padding: 2%; /* Поля */
+ }
+ .figure:first-child {
+  margin-left: 0; /* Убираем отступ для первого элемента */
+ }
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -511,8 +523,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.pad-10 {
+  padding: 10px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-60p {
+  height: 60%;
+}
+
+.h-57p {
+  height: 57%;
+}
+
+.h-80p {
+  height: 80%;
 }
 
 .h-40 {
@@ -530,6 +558,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-40 {
   width: 10rem;
 }
+
+.w-45 {
+  width: 20rem;
+}
+
+.w-50 {
+  width: 30rem;
+}
+
+.w-100 {
+  width: 75rem;
+}
+
 
 .w-3\/5 {
   width: 60%;
@@ -622,7 +663,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-bold {
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 
 .uppercase {
