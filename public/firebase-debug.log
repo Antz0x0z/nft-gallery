@@ -1,0 +1,391 @@
+[debug] [2022-11-01T08:31:33.087Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T08:31:33.089Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T08:31:33.090Z] CLI Version:   11.15.0
+[debug] [2022-11-01T08:31:33.090Z] Platform:      win32
+[debug] [2022-11-01T08:31:33.090Z] Node Version:  v16.18.0
+[debug] [2022-11-01T08:31:33.091Z] Time:          Tue Nov 01 2022 15:31:33 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T08:31:33.092Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T08:31:33.104Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-01T08:31:33.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T08:31:33.209Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T08:31:33.210Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T08:31:33.211Z] > refreshing access token with scopes: []
+[debug] [2022-11-01T08:31:33.212Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-01T08:31:33.212Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-01T08:31:33.458Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-01T08:31:33.459Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-01T08:31:33.469Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T08:31:33.469Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T08:31:33.469Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T08:31:33.679Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-11-01T08:31:33.679Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-11-01T08:31:34.503Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T08:31:34.503Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T08:31:34.505Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T08:31:34.950Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T08:31:34.950Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T08:31:34.954Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T08:31:36.206Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T08:31:36.206Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T08:31:36.206Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T08:31:36.987Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T08:31:36.987Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T08:31:36.994Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T08:31:37.419Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T08:31:37.419Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:03 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:03 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] "GET /style.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] \"GET /style.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] "GET /background.jpg HTTP/1.1" 200 59831 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] \"GET /background.jpg HTTP/1.1\" 200 59831 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] "GET /GameOfTheMind.js HTTP/1.1" 200 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] \"GET /GameOfTheMind.js HTTP/1.1\" 200 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:08:32:04 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T10:52:55.709Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T10:52:55.711Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T10:52:55.711Z] CLI Version:   11.15.0
+[debug] [2022-11-01T10:52:55.711Z] Platform:      win32
+[debug] [2022-11-01T10:52:55.711Z] Node Version:  v16.18.0
+[debug] [2022-11-01T10:52:55.713Z] Time:          Tue Nov 01 2022 17:52:55 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T10:52:55.713Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T10:52:55.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T10:52:55.811Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T10:52:55.811Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T10:52:55.812Z] > refreshing access token with scopes: []
+[debug] [2022-11-01T10:52:55.814Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-01T10:52:55.814Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-01T10:52:56.071Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-01T10:52:56.071Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-01T10:52:56.081Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T10:52:56.081Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T10:52:56.081Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:52:57.088Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T10:52:57.088Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:52:57.090Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:52:57.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:52:57.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T10:52:57.530Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T10:52:58.798Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T10:52:58.799Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T10:52:58.799Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T10:52:59.565Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T10:52:59.566Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T10:52:59.572Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:53:00.023Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:53:00.023Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:10:53:17 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:10:53:17 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:10:53:17 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:10:53:17 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T10:56:19.448Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T10:56:19.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T10:56:19.450Z] CLI Version:   11.15.0
+[debug] [2022-11-01T10:56:19.450Z] Platform:      win32
+[debug] [2022-11-01T10:56:19.450Z] Node Version:  v16.18.0
+[debug] [2022-11-01T10:56:19.451Z] Time:          Tue Nov 01 2022 17:56:19 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T10:56:19.452Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T10:56:19.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T10:56:19.542Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T10:56:19.542Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T10:56:19.544Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T10:56:19.545Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T10:56:19.545Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:56:20.498Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T10:56:20.498Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:56:20.499Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:56:20.953Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:56:20.954Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T10:56:20.957Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T10:56:22.158Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T10:56:22.159Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T10:56:22.159Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T10:56:22.905Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T10:56:22.905Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T10:56:22.912Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:56:23.370Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:56:23.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:10:56:25 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:10:56:25 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:10:56:26 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:10:56:26 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T10:58:00.039Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T10:58:00.041Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T10:58:00.041Z] CLI Version:   11.15.0
+[debug] [2022-11-01T10:58:00.041Z] Platform:      win32
+[debug] [2022-11-01T10:58:00.042Z] Node Version:  v16.18.0
+[debug] [2022-11-01T10:58:00.043Z] Time:          Tue Nov 01 2022 17:58:00 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T10:58:00.043Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T10:58:00.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T10:58:00.149Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T10:58:00.150Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T10:58:00.152Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T10:58:00.153Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T10:58:00.153Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:58:01.176Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T10:58:01.177Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T10:58:01.178Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:58:01.626Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:58:01.626Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T10:58:01.630Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T10:58:02.887Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T10:58:02.887Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T10:58:02.887Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T10:58:03.703Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T10:58:03.703Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T10:58:03.710Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T10:58:04.167Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T10:58:04.167Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] "GET /GContractOnCEMNetwork.js HTTP/1.1" 200 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:02:44 +0000] \"GET /GContractOnCEMNetwork.js HTTP/1.1\" 200 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:03:37.199Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:03:37.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:03:37.201Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:03:37.201Z] Platform:      win32
+[debug] [2022-11-01T11:03:37.201Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:03:37.203Z] Time:          Tue Nov 01 2022 18:03:37 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:03:37.203Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:03:37.293Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:03:37.293Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:03:37.293Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:03:37.295Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:03:37.296Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:03:37.296Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:03:38.329Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:03:38.329Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:03:38.330Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:03:38.798Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:03:38.799Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:03:38.802Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:03:40.096Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:03:40.096Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:03:40.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:03:40.867Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:03:40.867Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:03:40.872Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:03:41.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:03:41.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] "GET /GContractOnCEMNetwork.js HTTP/1.1" 304 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:03:50 +0000] \"GET /GContractOnCEMNetwork.js HTTP/1.1\" 304 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:04:02 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:04:02 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:05:38.561Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:05:38.563Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:05:38.564Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:05:38.564Z] Platform:      win32
+[debug] [2022-11-01T11:05:38.564Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:05:38.565Z] Time:          Tue Nov 01 2022 18:05:38 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:05:38.566Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:05:38.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:05:38.670Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:05:38.670Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:05:38.673Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:05:38.673Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:05:38.673Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:05:39.602Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:05:39.602Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:05:39.603Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:05:40.048Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:05:40.049Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:05:40.052Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:05:41.240Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:05:41.240Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:05:41.240Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:05:41.982Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:05:41.982Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:05:41.987Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:05:42.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:05:42.424Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] "GET /GContractOnCEMNetwork.js HTTP/1.1" 304 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:09:08 +0000] \"GET /GContractOnCEMNetwork.js HTTP/1.1\" 304 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:11:17.642Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:11:17.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:11:17.645Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:11:17.645Z] Platform:      win32
+[debug] [2022-11-01T11:11:17.645Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:11:17.646Z] Time:          Tue Nov 01 2022 18:11:17 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:11:17.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:11:17.737Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:11:17.738Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:11:17.738Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:11:17.740Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:11:17.740Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:11:17.740Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:11:18.768Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:11:18.768Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:11:18.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:11:19.185Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:11:19.186Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:11:19.189Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:11:20.433Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:11:20.433Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:11:20.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:11:21.180Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:11:21.180Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:11:21.187Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:11:21.616Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:11:21.616Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] "GET /GContractOnCEMNetwork.js HTTP/1.1" 304 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:11:26 +0000] \"GET /GContractOnCEMNetwork.js HTTP/1.1\" 304 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:12:23.451Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:12:23.452Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:12:23.453Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:12:23.453Z] Platform:      win32
+[debug] [2022-11-01T11:12:23.453Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:12:23.454Z] Time:          Tue Nov 01 2022 18:12:23 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:12:23.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:12:23.544Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:12:23.544Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:12:23.545Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:12:23.547Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:12:23.547Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:12:23.547Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:12:24.482Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:12:24.482Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:12:24.484Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:12:24.918Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:12:24.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:12:24.923Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:12:26.084Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:12:26.084Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:12:26.084Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:12:26.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:12:26.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:12:26.814Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:12:27.206Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:12:27.206Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:31 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:31 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:44 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:44 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /style.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /style.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /background.jpg HTTP/1.1" 200 59831 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /background.jpg HTTP/1.1\" 200 59831 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /ContractOnCEMNetwork.js HTTP/1.1" 200 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /ContractOnCEMNetwork.js HTTP/1.1\" 200 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:12:47 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:15:34.311Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:15:34.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:15:34.314Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:15:34.314Z] Platform:      win32
+[debug] [2022-11-01T11:15:34.314Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:15:34.315Z] Time:          Tue Nov 01 2022 18:15:34 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:15:34.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:15:34.407Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:15:34.407Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:15:34.408Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:15:34.410Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:15:34.410Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:15:34.410Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:15:35.353Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:15:35.353Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:15:35.355Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:15:35.779Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:15:35.780Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:15:35.783Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:15:36.951Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:15:36.951Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:15:36.951Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:15:37.705Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:15:37.706Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:15:37.714Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:15:38.173Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:15:38.173Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /style.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /style.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /background.jpg HTTP/1.1" 200 59831 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /background.jpg HTTP/1.1\" 200 59831 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /ContractOnCEMNetwork.js HTTP/1.1" 200 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /ContractOnCEMNetwork.js HTTP/1.1\" 200 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:15:41 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:16:12 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:16:12 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:16:12 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:16:12 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-01T11:20:22.401Z] ----------------------------------------------------------------------
+[debug] [2022-11-01T11:20:22.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aakern\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-01T11:20:22.403Z] CLI Version:   11.15.0
+[debug] [2022-11-01T11:20:22.403Z] Platform:      win32
+[debug] [2022-11-01T11:20:22.403Z] Node Version:  v16.18.0
+[debug] [2022-11-01T11:20:22.404Z] Time:          Tue Nov 01 2022 18:20:22 GMT+0700 (GMT+07:00)
+[debug] [2022-11-01T11:20:22.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-01T11:20:22.494Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-01T11:20:22.494Z] > authorizing via signed-in user (kern85@gmail.com)
+[debug] [2022-11-01T11:20:22.494Z] [iam] checking project antzbackend for permissions ["firebase.projects.get"]
+[debug] [2022-11-01T11:20:22.496Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions [none]
+[debug] [2022-11-01T11:20:22.497Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions x-goog-quota-user=projects/antzbackend
+[debug] [2022-11-01T11:20:22.497Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:20:23.506Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions 200
+[debug] [2022-11-01T11:20:23.506Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/antzbackend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-01T11:20:23.507Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:20:23.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:20:23.946Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] 
+[info] === Serving from 'C:\USERFILES\NFT-PROJECT\nft-gallery'...
+[info] 
+[debug] [2022-11-01T11:20:23.949Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 
+[debug] [2022-11-01T11:20:25.290Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites 200
+[debug] [2022-11-01T11:20:25.290Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/antzbackend/sites {"sites":[{"name":"projects/antzbackend/sites/antzbackend","defaultUrl":"https://antzbackend.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-01T11:20:25.291Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config [none]
+[debug] [2022-11-01T11:20:26.028Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config 200
+[debug] [2022-11-01T11:20:26.028Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend/webApps/-/config {"projectId":"antzbackend","storageBucket":"antzbackend.appspot.com","apiKey":"AIzaSyBU-oFy4wmKtBaD8Azbqc-W_nbZLSXciDY","authDomain":"antzbackend.firebaseapp.com","messagingSenderId":"578378483059"}
+[debug] [2022-11-01T11:20:26.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend [none]
+[debug] [2022-11-01T11:20:26.454Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend 200
+[debug] [2022-11-01T11:20:26.454Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/antzbackend {"projectId":"antzbackend","projectNumber":"578378483059","displayName":"AntzBackend","name":"projects/antzbackend","resources":{"hostingSite":"antzbackend"},"state":"ACTIVE","etag":"1_85671151-d654-4be3-b29e-2d324a4b2081"}
+[info] i  hosting[antzbackend]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[antzbackend]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /style.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /style.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /index.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /index.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /background.jpg HTTP/1.1" 200 59831 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /background.jpg HTTP/1.1\" 200 59831 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /ContractOnCEMNetwork.js HTTP/1.1" 200 - "http://localhost:5000/index.js" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /ContractOnCEMNetwork.js HTTP/1.1\" 200 - \"http://localhost:5000/index.js\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Nov/2022:11:20:31 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
