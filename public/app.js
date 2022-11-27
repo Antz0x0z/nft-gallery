@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-app.listen(3001, () => {
-  console.log("Application started and Listening on port 3001");
+const port = 3001;
+app.listen(port, () => {
+  console.log("Application started and Listening on port: "+ port);
 });
 
 // serve your css as static
 app.use(express.static(__dirname));
-
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });

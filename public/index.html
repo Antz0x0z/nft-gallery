@@ -1,64 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
-    <title>CEM Demo Gallery</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico">
+    <title>NFT TDS Demo Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_main.css" />
 </head>
-<!-- <body class="h-full bg-gray-700"> -->
 <body>
-  <div style="background-image: url('background.gif');">
-    <nav class="one">
-      <ul>
-      <li><a href="#"><em class="fa fa-home fa-fw"></em>Home</a></li>
-      <li><a href="https://cemwallet.com" target="_blank">CEM Wallet</a></li>
-      <li><a href="https:///www.cemscan.com" target="_blank">CEM Scan</a></li>
-      <li><a href="https://cemswap.com" target="_blank">CEM Swap</a></li>
-      <li><a href="https://cemblockchain.com" target="_blank">CEM Blockchain</a></li>
-      <li><a href="https://www.bitmart.com/trade/en?symbol=CEM_USDT&layout=basic" target="_blank">BitMart</a></li>
-      </ul>
-    </nav>
-</body>
+    <section class="loading"></section>
+    <section class="hero">
+        <div class="logo">TestDragons</div>
+        <div class="socials">
+            <ul>
+                <li>
+                    <a href="https://discord.com/invite/rnft" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/rNFTcommunity" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="heroG">
+            <div>
+                <h1>Welcome on <span class="red">TDS Demo Dragons</span></h1>
+                <p>Драко́н (греч. δράκων) — собирательное название, объединяющее ряд мифических существ, фигурирующих в мифах и фольклоре многих народов мира. Представления о драконах значительно различаются по регионам, но драконы западноевропейской мифологии со времён Высокого Средневековья часто изображались с массивным змеевидным телом, имели крылья, рога, четыре лапы и были способны выдыхать пламя. Драконы в восточных культурах обычно изображаются как бескрылые четвероногие существа с длинным змеевидным телом, обладающие определённым интеллектом.</p>
+                <a href="gallery.html">
+                    <button class="btn">See on Gallery</button>
+                </a>
+            </div>
+        </div>
+        <div class="heroD">
 
-  <main class="flex justify-center min-h-full">
- 
-    <div class="w-100">
-      <div class="mb-15">
-        <!-- 
-          <input type="text" id="wallet_address" autofocus autocomplete="off" 
-          value="0x790e36496c3bb299BA849253b6e930F546451699" placeholder="Wallet address" 
-          class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl 
-          text-blue-800 font-semibold outline-none">
-        -->
-         <select id="wallet_address" required="required" class="w-3/5 border-2 border-blue-500 px-4 py-1 lowercase rounded-md text-xl text-blue-800 font-semibold outline-none">
-         <!--  <option value="">Select contract</option> -->
-	        <option value="0x22081D0F442062b0aBC09023Da57f447C65D5AAf">Demo Crypto Halloween Ghost</option>
-          
-        </select>
-        <button id="load_button" class="border-2 border-blue-500 bg-blue-700 text-white transition-colors px-4 outline-none py-1 lowercase rounded-md text-xl font-semibold">
-          Load NFT's
-        </button>
-      </div>
-
-      <div id="nfts" class="pad-10 flex gap-7 flex-wrap"></div>
-    </div>
- 
-  </main>
-
-  <template id="nft_template">
-    <section>
-        <h1 class="font-bold bg-yellow-500 text-white text-center rounded-t-md"></h1>
-        <h2 class="font-bold bg-gray-700 text-white text-center rounded-t-md"></h2>
-        <a href="" target="_blank">
-          <img class="rounded-b-md figure .figure:first-child w-40 h-45" src="" alt="">
-        </a>
+        </div>
     </section>
-  </template>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
-
-  <script type="module" src="index.js"></script>
+    <section class="discord">
+        <div class="container">
+            <h2 data-aos="zoom-in">Join <span class="red">our Discord</span></h2>
+            <a href="https://discord.com/invite/rnft" data-aos="zoom-in-up"><button class="btn">Go !</button></a>
+        </div>
+    </section>
+    <div class="roadmap">
+        <div class="container">
+            <h2 data-aos="zoom-in">The <span class="red">Roadmap</span></h2>
+            <div class="line"></div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number">1</div>
+                <h4>Launch Roadmap</h4>
+                <p>В отличие от маркетингового плана, roadmap отображает долгосрочные стратегии и цели, а не детальное описание процесса работы с требованиями к сотрудникам и дедлайнами каждой задачи. Дорожная карта представляет собой «живой документ», который может меняться, поэтому нужно назначить человека, ответственного за его корректировку.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">2</div>
+                <h4>Launch Presale</h4>
+                <p>Токенсейл, Tokensale,  — продажа криптовалюты ранним инвесторам. Во время неё желающие покупают криптовалюту у владельцев напрямую[1]. Основатели криптовалют устраивают токенсейлы в рамках программы краудфандинга, собирают таким способом инвестиции в проект. Инвесторы приобретают новые токены, рассчитывая продать их в несколько раз дороже после листинга на биржах.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">3</div>
+                <h4>Mint the remaining NFTs on OpenSea</h4>
+                <p>Пользователи могут создавать NFT на OpenSea и предлагать или покупать их для прямой покупки или аукциона. OpenSea основан на стандарте Ethereum ERC 721.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">4</div>
+                <h4>Mint the remaining NFTs on Rarible</h4>
+                <p>Rarible - стартап из Лос-Анджелеса, который является разработчиком торговой площадки не взаимозаменяемых токенов (NFT) для создания, продажи и покупки цифровых предметов искусства на основе технологии блокчейн. Стартап основан россиянами Алексом Сальниковым и Алексеем Фалиным.</p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <div class="container">
+            <h2 data-aos="zoom-in">The <span class="red">Team</span></h2>
+            <div class="team__flex">
+                <div class="member" data-aos="zoom-in">
+                    <h4>@K1l****tz / <span class="job">Developer</span></h4>
+                    <img src="img/mekas/4.jpg" alt="@K1l****tz" />
+                </div>
+                <div class="member" data-aos="zoom-in">
+                    <h4>@Qa****in / <span class="job">Designer</span></h4>
+                    <img src="img/mekas/5.jpg" alt="@a****in" />
+                </div>
+                <div class="member" data-aos="zoom-in">
+                    <h4>@Kay****ak / <span class="job">Marketer</span></h4>
+                    <img src="img/mekas/7.jpg" alt="@Kay****ak" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footerG">
+                    TestDragons
+                </div>
+                <div class="footerD">
+                    <ul>
+                        <li><a href="https://testnets.opensea.io/">OpenSea Testnet</a></li>
+                        <li><a href="https://testnet.rarible.com/">Rarible Testnet</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="wall.js"></script>
 </body>
 </html>
