@@ -1,7 +1,7 @@
 import abi from "./abi.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-  const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/aa3APiqhaj-pQSr2rKbN10MX6zbtK9D7")
+  const web3 = new Web3("https://polygon-mumbai.g.alchemy.com/v2/AZKoVbYl2gDJpue8-6yaS6vVcjMYMNws")
   //const web3 = new Web3("http://localhost:8545/")
   web3.eth.getBlockNumber().then((result) => {
     console.log("Latest Block is ", result);
@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("nfts").innerHTML = ""
 
-    let count = 24 /* await contract.methods.totalSupply().call(); */
+    let count = await contract.methods.totalSupply().call();
     console.log("totalSupply is: ", count);
     for (let i = 1; i <= count; i++) {
-      let tokenMetadataURI = await contract.methods.tokenURI(i).call();
+      let tokenMetadataURI = await contract.methods.getURI(i).call();
       console.log("tokenURI is: ", tokenMetadataURI);
 
       if (tokenMetadataURI.startsWith("ipfs://")) {
@@ -26,14 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const tokenMetadata = await fetch(tokenMetadataURI).then((response) => response.json())
 
       const tokenElement = document.getElementById("nft_template").content.cloneNode(true)
-      /* tokenElement.querySelector("h1").innerText = tokenMetadata["name"] */
+      tokenElement.querySelector("h1").innerText = tokenMetadata["name"]
+      tokenElement.querySelector("h3").innerText = tokenMetadata["seller_fee_basis_points"] + " GWei"
 
       const elem = tokenMetadata["image"]
       if (elem.startsWith("ipfs://")) {
         tokenElement.querySelector("img").src = `https://ipfs.io/ipfs/${elem.split("ipfs://")[1]}`
-        /* tokenElement.querySelector("a").href = tokenMetadata["external_link"] */
-        tokenElement.querySelector("a").href = 
-        `https://testnet.rarible.com/token/${walletAddress}:${i}?tab=overview`
+        tokenElement.querySelector("a").href = tokenMetadata["external_link"]
       } 
       if (elem.startsWith("https://")) {
         tokenElement.querySelector("img").src = elem
